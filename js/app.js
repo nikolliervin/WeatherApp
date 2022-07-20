@@ -1,4 +1,5 @@
-
+const search=document.getElementById('searchTextBox');
+const searchButton=document.getElementById('searchBtn');
 
 let weather={
     'apiKey':'0179eede0cda5805bbbf0167236f129d',
@@ -35,3 +36,7 @@ let weather={
 function convert(kelvin){
     return kelvin-273.15;
 }
+
+searchButton.addEventListener('click', ()=>{
+    weather.fetchWeather(document.getElementById('searchTextBox').value);
+})
