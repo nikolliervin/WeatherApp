@@ -1,26 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+
 :root{
     --color-background:#161748;
     --color-container:#1B1C48;
     --color-text:#FEFEF6;
+    --margin:2rem
 }
 
 html{
     font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text);
 }
 body{
     background: var(--color-background);
 }
 .container{
-    display: flex;
+    /*display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
+    margin: var(--margin);
 }
 
 /*search section*/
+.search{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+
 .search-container{
     background: #fff;
     height: 40px;
-    border-radius: 30px;
+    border-radius: 45px;
     padding: 10px 20px;
     display: flex;
     justify-content: center;
@@ -68,4 +81,36 @@ body{
 
 .search-container:hover{
   animation: hoverShake 0.15s linear 3;
+}
+
+/*temperature*/
+
+h1{
+    font-size: 8rem;
+}
+/*lacation*/
+.location{
+    display: flex;
+    flex-direction: row;
+    
+}
+svg{
+    fill: var(--color-text);
+    width: 16px;
+    margin-right: 10px;
+}
+h3{
+    margin-bottom: 3px;
+    font-size: 1.4rem;
+}
+
+/*description*/
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-size: 3rem;
 }
