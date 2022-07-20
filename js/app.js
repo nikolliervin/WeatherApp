@@ -24,9 +24,9 @@ let weather={
         document.getElementById('humidity').innerHTML=humidity+'%';
         document.getElementById('windspeed').innerHTML=speed+'km/h';
         document.getElementById('winddeg').innerHTML=deg+'°';
-        document.getElementById('maxtemp').innerHTML=convert(temp_max)+' °C';
-        document.getElementById('mintemp').innerHTML=convert(temp_min)+' °C';
-        document.getElementById('pressure').innerHTML=pressure+' atm';
+        document.getElementById('maxtemp').innerHTML=Math.round(convert(temp_max))+'°C';
+        document.getElementById('mintemp').innerHTML=Math.round(convert(temp_min))+'°C';
+        document.getElementById('pressure').innerHTML=pressure+' pa';
     }
 
 }
