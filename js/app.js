@@ -27,6 +27,7 @@ let weather={
         document.getElementById('maxtemp').innerHTML=Math.round(convert(temp_max))+'°C';
         document.getElementById('mintemp').innerHTML=Math.round(convert(temp_min))+'°C';
         document.getElementById('pressure').innerHTML=pressure+' pa';
+        document.getElementById('icon').src='https://openweathermap.org/img/wn/'+ icon +'@2x.png'
     }
 
 }
