@@ -1,0 +1,17 @@
+:root{
+    --color-background:#161748;
+    --color-container:#1B1C48;
+    --color-text:#FEFEF6;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
