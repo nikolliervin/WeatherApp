@@ -15,12 +15,12 @@ let weather={
     displayWeather: function(data){
         const { name } = data;
         const { icon, description } = data.weather[0];
-        const { temp, humidity } = data.main;
+        const { temp, humidity, pressure, temp_min, temp_max } = data.main;
         const { speed } = data.wind;
         const { country } = data.sys
         document.getElementById('cityName').innerHTML=name + ', ' + country;
-        document.getElementById('temp').innerHTML = temp + ' ' + '°C';
-        document.getElementById('description').innerHTML=convert(description);
+        document.getElementById('temp').innerHTML = Math.round(convert(temp)) + ' ' + '°C';
+        document.getElementById('description').innerHTML=description.toUpperCase();
     }
 
 }
