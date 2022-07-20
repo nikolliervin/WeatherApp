@@ -87,11 +87,13 @@ body{
 
 h1{
     font-size: 8rem;
+    margin-bottom: 2rem;
 }
 /*lacation*/
 .location{
     display: flex;
     flex-direction: row;
+    margin-top: 2rem;
     
 }
 svg{
@@ -113,4 +115,37 @@ h3{
 }
 h2{
     font-size: 3rem;
+}
+.weather{
+    color: var(--color-text);
+    width: 140px;
+    margin: 2rem;
+}
+.cloudy{
+    display: none;
+}
+.rainy{
+    display: none;
+}
+.snowy{
+    display: none;
+}
+.detailed-description{
+    margin-top: 5rem;
+    background: var(--color-container);
+    border: 1px solid var(--color-text);
+    border-radius: 10px;
+    padding: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.description-unit{
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
 }
