@@ -1,6 +1,8 @@
 const search=document.getElementById('searchTextBox');
 const searchButton=document.getElementById('searchBtn');
 
+
+
 let weather={
     'apiKey':'0179eede0cda5805bbbf0167236f129d',
     fetchWeather:function(city){
@@ -40,3 +42,5 @@ function convert(kelvin){
 searchButton.addEventListener('click', ()=>{
     weather.fetchWeather(document.getElementById('searchTextBox').value);
 })
+
+weather.fetchWeather('London');
