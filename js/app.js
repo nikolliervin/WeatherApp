@@ -21,6 +21,12 @@ let weather={
         document.getElementById('cityName').innerHTML=name + ', ' + country;
         document.getElementById('temp').innerHTML = Math.round(convert(temp)) + ' ' + '°C';
         document.getElementById('description').innerHTML=description.toUpperCase();
+        document.getElementById('humidity').innerHTML=humidity+'%';
+        document.getElementById('windspeed').innerHTML=speed+'km/h';
+        document.getElementById('winddeg').innerHTML=deg+'°';
+        document.getElementById('maxtemp').innerHTML=convert(temp_max)+' °C';
+        document.getElementById('mintemp').innerHTML=convert(temp_min)+' °C';
+        document.getElementById('pressure').innerHTML=pressure+' atm';
     }
 
 }
